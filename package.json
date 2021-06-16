@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/utils-async-try-then",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "If a function does not return an error, invoke a callback with the function result; otherwise, invoke a second function.",
   "license": "Apache-2.0",
   "author": {
