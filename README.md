@@ -259,8 +259,8 @@ next();
 
 ## See Also
 
--   <span class="package-name">[`@stdlib/utils/async/try-catch`][@stdlib/utils/async/try-catch]</span><span class="delimiter">: </span><span class="description">if a function does not return an error, invoke a callback with the function result; otherwise, invoke a callback with a value `y`.</span>
--   <span class="package-name">[`@stdlib/utils/try-then`][@stdlib/utils/try-then]</span><span class="delimiter">: </span><span class="description">if a function does not throw, return the function return value; otherwise, return the return value of a second function.</span>
+-   <span class="package-name">[`@stdlib/utils-async/try-catch`][@stdlib/utils/async/try-catch]</span><span class="delimiter">: </span><span class="description">if a function does not return an error, invoke a callback with the function result; otherwise, invoke a callback with a value `y`.</span>
+-   <span class="package-name">[`@stdlib/utils-try-then`][@stdlib/utils/try-then]</span><span class="delimiter">: </span><span class="description">if a function does not throw, return the function return value; otherwise, return the return value of a second function.</span>
 
 </section>
 
