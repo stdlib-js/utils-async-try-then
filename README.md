@@ -52,7 +52,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import trythenAsync from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-async-try-then@deno/mod.js';
+import trythenAsync from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-async-try-then@v0.1.1-deno/mod.js';
 ```
 
 #### trythenAsync( x, y, done )
@@ -194,7 +194,7 @@ trythenAsync( x, y, done );
 import randu from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@deno/mod.js';
 import ceil from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-ceil@deno/mod.js';
 import repeatString from 'https://cdn.jsdelivr.net/gh/stdlib-js/string-repeat@deno/mod.js';
-import trythenAsync from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-async-try-then@deno/mod.js';
+import trythenAsync from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-async-try-then@v0.1.1-deno/mod.js';
 
 var i;
 
