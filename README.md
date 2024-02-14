@@ -54,6 +54,11 @@ limitations under the License.
 To use in Observable,
 
 ```javascript
+trythenAsync = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-async-try-then@umd/browser.js' )
+```
+The previous example will load the latest bundled code from the umd branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/utils-async-try-then/tags). For example,
+
+```javascript
 trythenAsync = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-async-try-then@v0.2.0-umd/browser.js' )
 ```
 
@@ -66,7 +71,7 @@ var trythenAsync = require( 'path/to/vendor/umd/utils-async-try-then/index.js' )
 To include the bundle in a webpage,
 
 ```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/utils-async-try-then@v0.2.0-umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/utils-async-try-then@umd/browser.js"></script>
 ```
 
 If no recognized module system is present, access bundle contents via the global scope:
@@ -221,7 +226,7 @@ trythenAsync( x, y, done );
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@umd/browser.js"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-ceil@umd/browser.js"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/string-repeat@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/utils-async-try-then@v0.2.0-umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/utils-async-try-then@umd/browser.js"></script>
 <script type="text/javascript">
 (function () {
 
