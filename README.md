@@ -52,6 +52,11 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import trythenAsync from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-async-try-then@esm/index.mjs';
+```
+The previous example will load the latest bundled code from the esm branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/utils-async-try-then/tags). For example,
+
+```javascript
 import trythenAsync from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-async-try-then@v0.2.2-esm/index.mjs';
 ```
 
@@ -199,7 +204,7 @@ trythenAsync( x, y, done );
 import randu from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@esm/index.mjs';
 import ceil from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-ceil@esm/index.mjs';
 import repeatString from 'https://cdn.jsdelivr.net/gh/stdlib-js/string-repeat@esm/index.mjs';
-import trythenAsync from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-async-try-then@v0.2.2-esm/index.mjs';
+import trythenAsync from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-async-try-then@esm/index.mjs';
 
 var i;
 
