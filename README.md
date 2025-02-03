@@ -45,38 +45,32 @@ limitations under the License.
 
 <!-- Package usage documentation. -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/utils-async-try-then
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
+-   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
-To use in Observable,
-
 ```javascript
-trythenAsync = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-async-try-then@umd/browser.js' )
-```
-
-To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
-
-```javascript
-var trythenAsync = require( 'path/to/vendor/umd/utils-async-try-then/index.js' )
-```
-
-To include the bundle in a webpage,
-
-```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/utils-async-try-then@umd/browser.js"></script>
-```
-
-If no recognized module system is present, access bundle contents via the global scope:
-
-```html
-<script type="text/javascript">
-(function () {
-    window.trythenAsync;
-})();
-</script>
+var trythenAsync = require( '@stdlib/utils-async-try-then' );
 ```
 
 #### trythenAsync( x, y, done )
@@ -115,7 +109,7 @@ trythenAsync( x, y, done );
 
 The function `x` is provided a single argument:
 
--   `clbk`: callback to invoke upon function completion
+-   `clbk`: callback to invoke upon function completion.
 
 The callback function accepts any number of arguments, with the first argument reserved for providing an error. If the error argument is falsy, the `done` callback is invoked with its first argument as `null` and all other provided arguments.
 
@@ -148,12 +142,12 @@ trythenAsync( x, y, done );
 
 If the error argument is truthy, the function invokes `y`. The number of arguments provided to `y` depends on the function's `length`. If `y` is a unary function, `y` is provided a single argument:
 
--   `clbk`: callback to invoke upon function completion
+-   `clbk`: callback to invoke upon function completion.
 
 Otherwise, `y` is provided two arguments:
 
--   `error`: the error from `x`
--   `clbk`: callback to invoke upon function completion
+-   `error`: the error from `x`.
+-   `clbk`: callback to invoke upon function completion.
 
 The callback function accepts any number of arguments, with the first argument reserved for providing an error. If the error argument is falsy, the `done` callback is invoked with its first argument equal to `null` and all other provided arguments. If the error argument is truthy, the `done` callback is invoked with only the error argument provided by `y`.
 
@@ -214,16 +208,11 @@ trythenAsync( x, y, done );
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-ceil@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/string-repeat@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/utils-async-try-then@umd/browser.js"></script>
-<script type="text/javascript">
-(function () {
+```javascript
+var randu = require( '@stdlib/random-base-randu' );
+var ceil = require( '@stdlib/math-base-special-ceil' );
+var repeatString = require( '@stdlib/string-repeat' );
+var trythenAsync = require( '@stdlib/utils-async-try-then' );
 
 var i;
 
@@ -261,11 +250,6 @@ function done( error, result ) {
 
 i = 0;
 next();
-
-})();
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -321,7 +305,7 @@ See [LICENSE][stdlib-license].
 
 ## Copyright
 
-Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
+Copyright &copy; 2016-2025. The Stdlib [Authors][stdlib-authors].
 
 </section>
 
@@ -369,9 +353,9 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/utils/async/try-catch]: https://github.com/stdlib-js/utils-async-try-catch/tree/umd
+[@stdlib/utils/async/try-catch]: https://github.com/stdlib-js/utils-async-try-catch
 
-[@stdlib/utils/try-then]: https://github.com/stdlib-js/utils-try-then/tree/umd
+[@stdlib/utils/try-then]: https://github.com/stdlib-js/utils-try-then
 
 <!-- </related-links> -->
 
